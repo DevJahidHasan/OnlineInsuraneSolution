@@ -1,0 +1,433 @@
+
+$primaryColor: #003399;
+$secondaryColor: #3399cc;
+$inverseColor: #000000;
+$whiteColor: #ffffff;
+$shadowColor: #ededeb;
+
+///////////////////////Sign Up Sign In////////////////////
+.modal-content{
+	    background-color: $inverseColor;
+	    opacity: 0.9;
+	    color: $whiteColor;
+		.btn-info{
+		background: linear-gradient(50deg, $primaryColor, $secondaryColor);
+	}
+}
+////////////////// Top Navber style start here///////////////////
+#topNav{
+	.img-fullScreen{
+		max-height: 100px;
+		max-width: 150px;
+		margin-top: 10px;
+		margin-bottom: 10px;
+
+	}
+	.img-smallScreen{
+		max-height: 100px;
+		max-width: 150px;
+		margin-top: 10px;
+		margin-bottom: 10px;
+		display: block;
+        margin-left: auto;
+        margin-right: auto;
+	}
+
+	.socialMedia ul{
+		li{
+			list-style-type: none;
+			display: inline-block;
+			a{
+				.fa-facebook{
+					padding: 0 2px;
+				}
+			.btn-info{
+			text-align: center;
+			padding: 10px 14px;
+			border-radius: 50%;
+			color: $whiteColor;
+			transition: 0.5s;
+			background: linear-gradient(50deg, $primaryColor, $secondaryColor);
+			margin: 25px 0 0 0;
+			}
+
+			}
+		}
+	}
+	.resisterButton{
+		ul{
+			float: right;
+			li{
+				list-style-type: none;
+				display: inline;
+				.btn-info{
+		        background: linear-gradient(50deg, $primaryColor, $secondaryColor);
+		        color: $whiteColor;
+		        margin-top: 20px;
+		        padding: 10px 20px; 
+	                     }
+			}
+		}
+	}
+
+
+
+}
+@media screen and (max-width: 600px) { #topNav .img-fullScreen {display: none;}}
+@media screen and (min-width: 600px) { #topNav .img-smallScreen {display: none;}}
+
+////////////////// Navber style start here///////////////////
+#navberMiddle{
+	.navbar-color{
+		background: linear-gradient(50deg, $primaryColor, $secondaryColor);
+		color: $whiteColor;
+		margin: 0 !important;
+	}
+	
+}
+////////////////// Carosel style start here///////////////////
+#carousel{
+	.carousel-item{
+		.d-block{
+			max-width: 100% auto !important;
+			max-height: 500px auto !important;
+		}
+	}
+    .familyImage{
+    	position: relative;
+    	.family-banner-txt-price{
+    		position: absolute;
+    		margin-left: 60%;
+    		margin-top: 2%;
+    		max-height: 25%;
+    		max-width: 25%;
+
+    	}
+    	.bike-price{
+    		 position: absolute;
+    		margin-left: 50%;
+    		margin-top: 5%;
+    		max-height: 40%;
+    		max-width: 45%;
+    	}
+    }
+    .carousel-control-prev{
+    	color: #282828;
+    }
+    .carousel-control-next{
+    	color: #282828;
+    }
+}
+////////////////// Informative Graphics style start here for full screen///////////////////
+@media screen and (max-width: 750px) { #infoGraphicFull {display: none;}}
+#infoGraphicFull{
+	margin-top: 50px;
+	position: relative;
+	text-align: center;
+	.container{
+		h2{
+			color: $secondaryColor;
+			font-weight: bold;
+			transform: translate(0%, -400%);
+		}
+		.imgGraph{
+			max-width: 70%;
+            height: auto;
+            margin: 0 auto;
+		}
+		ul{
+			padding: 0;
+			margin: 0;
+			li:nth-child(1){
+				transform: translate(-10%, -150%);
+			}
+			li:nth-child(2){
+				transform: translate(-10%, -55%);
+			}
+			li:nth-child(3){
+				transform: translate(0%, -45%);
+			}
+			li:nth-child(4){
+				transform: translate(20%, -70%);
+			}
+			li:nth-child(5){
+				transform: translate(20%, -110%);
+			}
+			li{
+				list-style-type: none;
+				display: inline-block;
+				p{
+					font-size: 13px;
+                    line-height: 1.35;
+                    font-weight: 400;
+                    letter-spacing: 0.35px;
+                    margin-bottom: 1.8rem;
+                    box-sizing: border-box;
+				}
+				.img-info{
+					border-radius: 50%;
+                    height: 100px;
+                    width: 100px;
+                    background: $shadowColor;
+                    position: relative;
+                    margin: 0 auto;
+
+					img{
+                       position: absolute;
+                       left: 50%;
+                       top: 50%;
+                       transform: translate(-50%, -50%);
+                       height: 55px;	
+					}
+				}
+			}
+		}
+	}
+}
+////////// Informative Graphics style start here for small screen//////////////
+@media screen and (min-width: 750px) { #infoGraphicSmall {display: none;}}
+#infoGraphicSmall{
+	margin-top: 25px;
+	.container{
+		h2{
+			text-align: center;
+			color: $secondaryColor;
+			font-weight: bold;
+			margin: 0 20px;
+		}
+		ul{
+			margin: 0;
+			padding: 0;
+			li{
+				list-style-type: none;
+				color: $inverseColor;
+				text-align: center;
+				.img-info{
+					border-radius: 50%;
+                    height: 125px;
+                    width: 125px;
+                    background: $shadowColor;
+                    position: relative;
+                    margin: 0 auto;
+
+					img{
+                       position: absolute;
+                       left: 50%;
+                       top: 50%;
+                       transform: translate(-50%, -50%);
+                       height: 55px;	
+				}	}
+			}
+		}
+	}
+}
+/////// Partner Company style start here for full screen//////////
+#brandSlider{
+	h1{
+		text-align: center;
+		color: $secondaryColor;
+		margin-top: 15;
+		margin-bottom: 15px;
+	}
+	#brand-slider{
+		margin-top: 30px;
+	}
+}
+
+/* Slider */
+#brand-slider {
+  background-color: #f5f5f5;
+  margin: 20px 0; }
+
+.slick-slide {
+  margin: 0px 20px; }
+
+.slick-slide img {
+  width: 100%; }
+
+.slick-slider {
+  position: relative;
+  display: block;
+  box-sizing: border-box;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-touch-callout: none;
+  -khtml-user-select: none;
+  -ms-touch-action: pan-y;
+  touch-action: pan-y;
+  -webkit-tap-highlight-color: transparent; }
+
+.slick-list {
+  position: relative;
+  display: block;
+  overflow: hidden;
+  margin: 0;
+  padding: 0; }
+
+.slick-list:focus {
+  outline: none; }
+
+.slick-list.dragging {
+  cursor: pointer;
+  cursor: hand; }
+
+.slick-slider .slick-track,
+.slick-slider .slick-list {
+  -webkit-transform: translate3d(0, 0, 0);
+  -moz-transform: translate3d(0, 0, 0);
+  -ms-transform: translate3d(0, 0, 0);
+  -o-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0); }
+
+.slick-track {
+  position: relative;
+  top: 0;
+  left: 0;
+  display: block; }
+
+.slick-track:before,
+.slick-track:after {
+  display: table;
+  content: ''; }
+
+.slick-track:after {
+  clear: both; }
+
+.slick-loading .slick-track {
+  visibility: hidden; }
+
+.slick-slide {
+  display: none;
+  float: left;
+  height: 100%;
+  min-height: 1px; }
+
+[dir='rtl'] .slick-slide {
+  float: right; }
+
+.slick-slide img {
+  display: block; }
+
+.slick-slide.slick-loading img {
+  display: none; }
+
+.slick-slide.dragging img {
+  pointer-events: none; }
+
+.slick-initialized .slick-slide {
+  display: block; }
+
+.slick-loading .slick-slide {
+  visibility: hidden; }
+
+.slick-vertical .slick-slide {
+  display: block;
+  height: auto;
+  border: 1px solid transparent; }
+
+.slick-arrow.slick-hidden {
+  display: none; }
+
+/* company brand logo slider end*/
+///////////////// Offer card style start here///////////////
+#offerCard{
+	.container{
+		 .row{
+		 .col-md-4{
+		 	box-shadow: 10px solid $inverseColor;
+		 }
+		 }
+	}
+}
+/////////////// Pakages Style start here/////////////////////
+#pakagesCard{
+	margin-top: 100px;
+	margin-bottom: 50px;
+	text-align: center;
+	h1{
+       color: $secondaryColor;
+	}
+	.container{
+		.row{
+			.col-md-6{
+				text-align: center;
+				img{
+					max-height: 100px;
+					max-width: 200px;
+				}
+				a{
+					text-decoration: none;
+					border-radius: 35px !important;
+					background: linear-gradient(50deg, $primaryColor, $secondaryColor) !important; 
+				}
+			}
+		}
+	}
+}
+///////////////// Work process style start here///////////////
+#itWork{
+	margin-top: 50px;
+	margin-bottom: 50px;
+	text-align: center;
+	.container{
+		.row{
+			img{
+				height: 150px;
+				width: 125px;
+			}
+		}
+	}
+}
+
+/////// Footer style start here for full screen//////////
+#footer{
+	.container-fluid{
+		background: linear-gradient(50deg, $primaryColor, $secondaryColor);
+		text-align: center;
+		padding: 30px 25px 0px 25px;
+		color: $whiteColor;
+
+		.callCenter{
+			display: inline-block;
+			a{
+				text-align: justify;
+				img{
+					height: 70px;
+					width: 75px;
+				}
+			}
+		}
+		.callTime{
+		      display: inline-block;
+		      transform: translate(0%,35%);
+		      strong{
+		      	font-size: 30px;
+		      }
+	   }
+	   .col-md-4{
+	   	// padding: 20px 0;
+	   	ul{
+	   		padding: 0;
+	   		li{
+	   			list-style-type: none;
+	   			display: inline-block;
+	   			margin-top: 10px;
+	   			a{
+	   				text-decoration: none;
+	   				color: $whiteColor;
+	   				padding: 5px;
+	   				img{
+	   					height: 50px;
+	   					width: 50px;
+	   				}
+	   			}
+	   		}
+	   	  }
+	   }
+	}
+	.copyRight{
+		padding: 10px;
+	}
+}
